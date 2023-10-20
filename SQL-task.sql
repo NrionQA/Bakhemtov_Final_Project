@@ -1,6 +1,6 @@
 -- Первое задания для PSQL -- 
 
-SELECT c.login, COUNT(1)
+SELECT c.login, COUNT(*)
 FROM "Couriers" AS c
 JOIN "Orders" AS o ON c.id = o."courierId"
 WHERE (o."inDelivery") = TRUE
